@@ -1,19 +1,6 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const gallery = document.getElementById("gallery");
-  const box = document.querySelector(".box");
-  const colorButton = document.getElementById("changeColor");
-  const toggleButton = document.getElementById("toggleImage");
-  });
+dconst title = document.getElementById("title");
+const button = document.getElementById("changeBtn");
  
- 
- 
-  let toggled = false;
-  toggleButton.addEventListener("click", () => {
-    if (toggled) {
-      gallery.src = "lens.jpg";
-      toggled = false;
-    } else {
-      gallery.src = "Lens2.jpg"; 
-      toggled = true;
-    }
-  });
+button.addEventListener("click", () => {
+  title.textContent = "Hello from JavaScript!";
+  title.style.color = "teal";
