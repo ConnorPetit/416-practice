@@ -1,1 +1,19 @@
-
+document.addEventListener("DOMContentLoaded", () => {
+  const gallery = document.getElementById("gallery");
+  const box = document.querySelector(".box");
+  const colorButton = document.getElementById("changeColor");
+  const toggleButton = document.getElementById("toggleImage");
+  });
+ 
+ 
+ 
+  let toggled = false;
+  toggleButton.addEventListener("click", () => {
+    if (toggled) {
+      gallery.src = "lens.jpg";
+      toggled = false;
+    } else {
+      gallery.src = "Lens2.jpg"; 
+      toggled = true;
+    }
+  });
